@@ -1,0 +1,28 @@
+.page {
+    background: var(--background);
+    font-family: 'OpenSans', Helvetica, sans-serif;
+    color: var(--main-text-intro);
+}
+
+.page__container {
+    width: 100%;
+    max-width: 1295px;
+    min-width: 1295px;
+    margin: 0 auto;
+}
+
+.page__container_main {
+    padding: 26px 0 77px;
+}
+
+.page__header {
+    width: 100%;
+    margin: 0 148px 8px;
+}
+
+.page__intro {
+    width: 100%;
+    min-height: 1485px;
+    margin: 0 auto;
+    padding: 0;
+}

@@ -1,19 +1,48 @@
 {
-  "name": "puskeen",
-  "version": "1.0.0",
-  "description": "тестовый проект лендинга",
-  "main": "index.js",
-  "scripts": {
-    "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Michael2M-dot/pushKeen-landing-.git"
-  },
-  "author": "Michael2M",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Michael2M-dot/pushKeen-landing-/issues"
-  },
-  "homepage": "https://github.com/Michael2M-dot/pushKeen-landing-#readme"
+    "name": "puskeen",
+    "version": "1.0.0",
+    "description": "тестовый проект лендинга",
+    "main": "index.js",
+    "scripts": {
+        "test": "test",
+        "stylelint": "stylelint '**/*{.css,.scss}'",
+        "stylelint:fix": "stylelint '**/*{.css,.scss}' --fix",
+        "prettier": "npx prettier --write ."
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{html,css,scss}": [
+            "prettier --write",
+            "stylelint --fix",
+            "git add"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Michael2M-dot/pushKeen-landing-.git"
+    },
+    "author": "Michael2M",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Michael2M-dot/pushKeen-landing-/issues"
+    },
+    "homepage": "https://github.com/Michael2M-dot/pushKeen-landing-#readme",
+    "dependencies": {
+        "prettier": "^2.6.1",
+        "stylelint": "^14.6.0",
+        "stylelint-config-idiomatic-order": "^8.1.0",
+        "stylelint-config-prettier": "^9.0.3",
+        "stylelint-config-standard": "^25.0.0",
+        "stylelint-order": "^5.0.0",
+        "stylelint-prettier": "^2.0.0"
+    },
+    "devDependencies": {
+        "husky": "^7.0.4",
+        "lint-staged": "^12.3.7",
+        "stylelint-scss": "^4.2.0"
+    }
 }

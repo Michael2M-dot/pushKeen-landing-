@@ -1,21 +1,9 @@
-@import url("../assets/css/normalize.css");
-@import url("../assets/css/main.css");
-@import url("../assets/fonts/fonts.css");
+@import url('../assets/css/normalize.css');
+@import url('../assets/css/main.css');
+@import url('../assets/fonts/fonts.css');
 
 /* стили для компонентов */
-@import "../components/page/page.css";
-@import "../components/content/content.css";
-@import "../components/header/header.css";
-@import "../components/footer/footer.css";
-@import "../components/logo/logo.css";
-@import "../components/burger-menu/burger-menu.css";
-@import "../components/checkbox/checkbox.css";
-@import "../components/toggler/toggler.css";
-@import "../components/card/card.css";
-@import "../components/tooltip/tooltip.css";
-@import "../components/radio/radio.css";
-@import "../components/calendar/calendar.css";
-@import "../components/modal/modal.css";
-@import "../components/button/button.css";
-@import "../components/histogram/histogram.css";
-@import "../components/avatar/avatar.css";
+@import url('../components/page/page.css');
+@import url('../components/header/header.css');
+@import url('../components/section/section.css');
+@import url('../components/intro/intro.css');

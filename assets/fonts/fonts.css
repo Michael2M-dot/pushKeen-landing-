@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'OpenSans';
+    font-weight: 400;
+    src: url('./OpenSans-Regular.woff') format('woff'),
+        url('./OpenSans-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    font-weight: 600;
+    src: url('./OpenSans-SemiBold.woff') format('woff'),
+        url('./OpenSans-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    font-weight: 700;
+    src: url('./OpenSans-Bold.woff') format('woff'),
+        url('./OpenSans-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    font-weight: 800;
+    src: url('./OpenSans-ExtraBold.woff') format('woff'),
+        url('./OpenSans-ExtraBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Tippytoes';
+    font-weight: 700;
+    src: url('./assets/fonts/TippytoesBold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Tippytoes';
+    font-weight: 800;
+    src: url('./assets/fonts/TippytoesXTraBold.ttf') format('ttf');
+}
