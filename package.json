@@ -1,0 +1,19 @@
+{
+  "name": "puskeen",
+  "version": "1.0.0",
+  "description": "тестовый проект лендинга",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Michael2M-dot/pushKeen-landing-.git"
+  },
+  "author": "Michael2M",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Michael2M-dot/pushKeen-landing-/issues"
+  },
+  "homepage": "https://github.com/Michael2M-dot/pushKeen-landing-#readme"
+}
