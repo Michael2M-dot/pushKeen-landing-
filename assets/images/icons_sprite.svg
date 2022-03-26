@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <symbol viewBox="0 0 24 24" id="icon_home">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 1h2l9 7v12a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V8l9-7ZM4 9v11a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V9l-8-6-8 6Z" fill="currentColor"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="m8 12 1-1h6l1 1v10a1 1 0 1 1-2 0v-9h-4v9a1 1 0 1 1-2 0V12Z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon_help">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18ZM1 12a11 11 0 1 1 22 0 11 11 0 0 1-22 0Z" fill="currentColor"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 8a2 2 0 0 0-2 1 1 1 0 0 1-2 0 4 4 0 0 1 8 1c0 2-1 3-2 3a8 8 0 0 1-2 1v-1 1a1 1 0 0 1 0-2l1-1 1-1a2 2 0 0 0-2-2ZM12 15l1 1v1a1 1 0 1 1-2 0v-1l1-1Z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon_success">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16 4a9 9 0 1 0 5 8v-1a1 1 0 1 1 2 0v1a11 11 0 1 1-7-10 1 1 0 1 1 0 2Z" fill="currentColor"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M23 3v2L13 15a1 1 0 0 1-2 0l-3-3a1 1 0 1 1 2-2l2 3 9-10h2Z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon_error">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 2a3 3 0 0 1 4 1l8 14a3 3 0 0 1-3 5H4a3 3 0 0 1-3-5L9 3l1 1-1-1 2-1Zm0 2L3 19a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1L13 4a1 1 0 0 0-2 0Z" fill="currentColor"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="m12 8 1 1v4a1 1 0 1 1-2 0V9l1-1ZM12 15l1 1v1a1 1 0 1 1-2 0v-1l1-1Z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon_star">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="m12 1 1 1 3 5 6 1a1 1 0 0 1 1 2l-5 4 1 7a1 1 0 0 1-1 1l-6-3-6 3a1 1 0 0 1-1-1l1-7-5-4a1 1 0 0 1 1-2l6-1 3-5 1-1Zm0 3-2 5H9l-5 1 4 3v1l-1 5 5-2 5 2-1-5v-1l4-3-5-1h-1l-2-5Z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon_cart">
+            <g clip-path="url(#a)" fill-rule="evenodd" clip-rule="evenodd" fill="currentColor">
+                <path d="M7 21a2 2 0 1 1 4 0 2 2 0 0 1-4 0ZM18 21a2 2 0 1 1 4 0 2 2 0 0 1-4 0ZM0 1l1-1h4l1 1 1 4h16a1 1 0 0 1 1 1l-2 9a3 3 0 0 1-3 2h-9a3 3 0 0 1-3-2L5 6 4 2H1L0 1Zm7 6 2 7a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1l2-7H7Z"/>
+            </g>
+            <defs>
+                <clipPath id="a">
+                    <path fill="currentColor" d="M0 0h24v24H0z"/>
+                </clipPath>
+            </defs>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon_pin">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2a8 8 0 0 0-8 8c0 3 2 6 4 8a29 29 0 0 0 4 4 27 27 0 0 0 4-4c2-2 4-5 4-8a8 8 0 0 0-8-8Zm0 21-1 1a29 29 0 0 1-4-4c-3-3-5-6-5-10a10 10 0 0 1 20 0c0 4-2 7-5 10a31 31 0 0 1-4 4l-1-1Zm0 0 1 1h-2l1-1Z" fill="currentColor"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 8a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-4 2a4 4 0 1 1 8 0 4 4 0 0 1-8 0Z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon_calendar">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 5 4 6v14l1 1h14l1-1V6l-1-1H5ZM2 6c0-2 1-3 3-3h14c2 0 3 1 3 3v14c0 2-1 3-3 3H5c-2 0-3-1-3-3V6Z" fill="currentColor"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="m16 1 1 1v4a1 1 0 1 1-2 0V2l1-1ZM8 1l1 1v4a1 1 0 0 1-2 0V2l1-1ZM2 10l1-1h18a1 1 0 1 1 0 2H3l-1-1Z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon_edit">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="m2 4 2-1h7a1 1 0 1 1 0 2H4a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7a1 1 0 1 1 2 0v7a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V6l1-2Z" fill="currentColor"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M20 3h-1l-9 10-1 2 2-1 10-9a1 1 0 0 0-1-2Zm-2-1a3 3 0 0 1 4 4l-9 10h-1l-4 1a1 1 0 0 1-1-1l1-4v-1l10-9Z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon_image">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4 4 5v14l1 1h14l1-1V5l-1-1H5ZM2 5c0-2 1-3 3-3h14c2 0 3 1 3 3v14c0 2-1 3-3 3H5c-2 0-3-1-3-3V5Z" fill="currentColor"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 8a1 1 0 1 0 0 1 1 1 0 0 0 0-1ZM6 9a3 3 0 1 1 5 0 3 3 0 0 1-5 0ZM15 9h2l5 5a1 1 0 0 1-2 2l-4-5L6 22a1 1 0 0 1-2-2L15 9Z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon_bell">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7 3a7 7 0 0 1 12 5l1 7a6 6 0 0 0 2 1 1 1 0 0 1-1 2H3a1 1 0 0 1-1-2h1l1-1 1-7 2-5ZM2 16Zm3 0h14l-2-8A5 5 0 0 0 7 8a16 16 0 0 1-2 8ZM10 20h1a1 1 0 0 0 2 0 1 1 0 0 1 2 2 3 3 0 0 1-6 0l1-2Z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon_upload">
+            <g clip-path="url(#a)" fill-rule="evenodd" clip-rule="evenodd" fill="currentColor">
+                <path d="M11 11h2l4 4a1 1 0 0 1-2 2l-3-4-3 4a1 1 0 0 1-2-2l4-4Z"/>
+                <path d="m12 11 1 1v9a1 1 0 1 1-2 0v-9l1-1Z"/>
+                <path d="M9 2a9 9 0 0 1 8 6h1a6 6 0 0 1 3 11 1 1 0 1 1-1-1 4 4 0 0 0-2-8h-1l-1-1a7 7 0 1 0-12 7 1 1 0 1 1-2 1A9 9 0 0 1 9 2Z"/>
+                <path d="M11 11h2l4 4a1 1 0 0 1-2 2l-3-4-3 4a1 1 0 0 1-2-2l4-4Z"/>
+            </g>
+            <defs>
+                <clipPath id="a">
+                    <path fill="currentColor" d="M0 0h24v24H0z"/>
+                </clipPath>
+            </defs>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon_download">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="m3 14 1 1v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4a1 1 0 1 1 2 0v4a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-4l1-1Z" fill="currentColor"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6 9h2l4 5 4-5a1 1 0 1 1 2 2l-5 5h-2l-5-5V9Z" fill="currentColor"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="m12 2 1 1v12a1 1 0 1 1-2 0V3l1-1Z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon_bar-chart">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="m18 9 1 1v10a1 1 0 1 1-2 0V10l1-1ZM12 3l1 1v16a1 1 0 1 1-2 0V4l1-1ZM6 13l1 1v6a1 1 0 1 1-2 0v-6l1-1Z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon_inbox">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="m1 12 1-1h7l2 3h2l2-3h7a1 1 0 1 1 0 2h-5l-2 3H9l-2-3H2l-1-1Z" fill="currentColor"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7 3h10a3 3 0 0 1 2 2l4 7v6a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3v-6l4-7a3 3 0 0 1 2-2ZM5 5l1 1-3 6v6a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-6l-3-6a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1L5 5Z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon_filter">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="m1 3 1-1h20a1 1 0 0 1 1 2l-8 9v8a1 1 0 0 1-1 1l-4-2-1-1v-6L1 4V3Zm3 1 7 8v6l2 1v-7l7-8H4Z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon_map">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="m8 1 8 4 7-4a1 1 0 0 1 1 1v16l-1 1-7 4-8-4-7 4a1 1 0 0 1-1-1V6l1-1 7-4Zm0 2L2 7v13l6-3 8 4 6-4V4l-6 3-8-4Z" fill="currentColor"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="m8 1 1 1v16a1 1 0 1 1-2 0V2l1-1ZM16 5l1 1v16a1 1 0 1 1-2 0V6l1-1Z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon_zap">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="m13 1 1 1-1 7h8a1 1 0 0 1 1 2L12 23a1 1 0 0 1-2-1l1-7H3a1 1 0 0 1-1-2L12 1h1ZM5 13h7a1 1 0 0 1 1 1l-1 5 7-8h-7a1 1 0 0 1-1-1l1-5-7 8Z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon_share">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M18 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-4 2a4 4 0 1 1 8 0 4 4 0 0 1-8 0ZM6 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-4 2a4 4 0 1 1 8 0 4 4 0 0 1-8 0ZM18 17a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-4 2a4 4 0 1 1 8 0 4 4 0 0 1-8 0Z" fill="currentColor"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 13h1l7 4a1 1 0 1 1-1 1l-7-4v-1ZM16 6v1l-7 4a1 1 0 0 1-1-1l7-4h1Z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon_tip">
+            <path d="M19 10a8 8 0 0 1-4 7 8 8 0 0 1-8 0l-6 2 2-6a8 8 0 0 1 0-8 9 9 0 0 1 8-4h0a8 8 0 0 1 8 8v1Z" stroke="#212429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon_credit-card">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 5 2 6v12l1 1h18l1-1V6l-1-1H3ZM0 6c0-2 1-3 3-3h18c2 0 3 1 3 3v12c0 2-1 3-3 3H3c-2 0-3-1-3-3V6Z" fill="currentColor"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="m0 10 1-1h22a1 1 0 1 1 0 2H1l-1-1Z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon_search">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14Zm-9 7a9 9 0 1 1 18 0 9 9 0 0 1-18 0Z" fill="currentColor"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16 16h1l5 4a1 1 0 0 1-2 2l-4-5v-1Z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon_user">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="m4 15 4-1h8a5 5 0 0 1 5 5v2a1 1 0 1 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 1 1-2 0v-2l1-4ZM12 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6ZM7 7a5 5 0 1 1 10 0A5 5 0 0 1 7 7Z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon_users">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="m1 15 4-1h8a5 5 0 0 1 5 5v2a1 1 0 1 1-2 0v-2a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v2a1 1 0 1 1-2 0v-2l1-4ZM9 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6ZM4 7a5 5 0 1 1 10 0A5 5 0 0 1 4 7ZM19 15l1-1a5 5 0 0 1 4 5v2a1 1 0 1 1-2 0v-2a3 3 0 0 0-2-3l-1-1ZM15 3l1-1a5 5 0 0 1 0 10 1 1 0 0 1 0-2 3 3 0 0 0 0-6l-1-1Z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon_sun">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-6 4a6 6 0 1 1 12 0 6 6 0 0 1-12 0ZM12 0l1 1v2a1 1 0 1 1-2 0V1l1-1ZM12 20l1 1v2a1 1 0 1 1-2 0v-2l1-1ZM4 4h1l1 1a1 1 0 0 1-1 1L4 5V4ZM18 18h1l1 1a1 1 0 0 1-1 1l-1-1v-1ZM0 12l1-1h2a1 1 0 1 1 0 2H1l-1-1ZM20 12l1-1h2a1 1 0 1 1 0 2h-2l-1-1ZM6 18v1l-1 1a1 1 0 0 1-1-1l1-1h1ZM20 4v1l-1 1a1 1 0 1 1-1-1l1-1h1Z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon_moon">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3v1a6 6 0 0 0 8 8l1 1h1A10 10 0 1 1 11 2l1 1Zm8 12A8 8 0 0 1 9 4a8 8 0 1 0 11 11Z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon_close">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M19 5v2L7 19a1 1 0 0 1-2-2L17 5h2Z" fill="currentColor"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 5h2l12 12a1 1 0 0 1-2 2L5 7V5Z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 18 10" id="icon_arrow">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L9 7.58579L16.2929 0.292893C16.6834 -0.0976311 17.3166 -0.0976311 17.7071 0.292893C18.0976 0.683417 18.0976 1.31658 17.7071 1.70711L9.70711 9.70711C9.31658 10.0976 8.68342 10.0976 8.29289 9.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24"  id="icon_burger-menu">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="m2 12 1-1h18a1 1 0 1 1 0 2H3l-1-1ZM2 6l1-1h18a1 1 0 1 1 0 2H3L2 6ZM2 18l1-1h18a1 1 0 1 1 0 2H3l-1-1Z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon_check">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M21 5v2L10 18H8l-5-5a1 1 0 1 1 2-2l4 5L19 5h2Z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 15 13" fill="currentColor" id="icon_checkbox-check">
+            <path d="m2 8 3 3 8-9" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon_check-circle" fill="none">
+            <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18457 2.99721 7.13633 4.39828 5.49707C5.79935 3.85782 7.69279 2.71538 9.79619 2.24015C11.8996 1.76491 14.1003 1.98234 16.07 2.86" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22 4L12 14.01L9 11.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" fill="none" id="icon_alert-triangle">
+            <path d="M10.29 3.86001L1.82 18C1.64537 18.3024 1.55296 18.6453 1.55199 18.9945C1.55101 19.3437 1.64149 19.6871 1.81442 19.9905C1.98736 20.2939 2.23672 20.5468 2.53771 20.7239C2.83869 20.901 3.1808 20.9962 3.53 21H20.47C20.8192 20.9962 21.1613 20.901 21.4623 20.7239C21.7633 20.5468 22.0126 20.2939 22.1856 19.9905C22.3585 19.6871 22.449 19.3437 22.448 18.9945C22.447 18.6453 22.3546 18.3024 22.18 18L13.71 3.86001C13.5317 3.56611 13.2807 3.32313 12.9812 3.15449C12.6817 2.98585 12.3437 2.89726 12 2.89726C11.6563 2.89726 11.3183 2.98585 11.0188 3.15449C10.7193 3.32313 10.4683 3.56611 10.29 3.86001V3.86001Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 9V13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 16V16.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+    </defs>
+</svg>
