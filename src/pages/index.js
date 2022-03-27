@@ -1,39 +1,33 @@
-// import "./index.css";
-//
-// const close = document.querySelector("#modal-close");
-// const modal = document.querySelector('#modal');
-// const modalOpen = document.querySelector('#modal-open');
-//
-// console.log("hello");
-// // function modalToggler() {
-// // 	if (!close || !modalOpen || !modal) {
-// // 		return;
-// // 	}
-//
-// // 	modalOpen.addEventListener('click', () => {
-// // 		modal.style.visibility = 'visible';
-// // 		document.body.overflow = 'hidden';
-// // 	});
-// //
-// // 	close.addEventListener('click', () => {
-// // 		modal.style.visibility = 'hidden';
-// // 		document.body.overflow = 'initial';
-// // 	});
-// // };
-//
-// modalOpen.addEventListener('click', (e) => {
-// 	if (!close || !modalOpen || !modal) {
-// 		return;
-// 	}
-// 	console.log("Opa!")
-// 	modal.style.visibility = 'visible';
-// 	document.body.overflow = 'hidden';
-// });
-//
-// close.addEventListener('click', () => {
-// 	if (!close || !modalOpen || !modal) {
-// 		return;
-// 	}
-// 	modal.style.visibility = 'hidden';
-// 	document.body.overflow = 'initial';
-// });
+// основаной файл с логикой
+
+alert('Hi');
+
+import './index.css';
+
+import { initialCards } from '../scripts/utils/initialCards';
+
+import Card from '../scripts/components/Card';
+
+import Section from '../scripts/components/Section';
+
+const cardSection = document.querySelector('#card-section');
+
+const createCard = (data) => {
+    const card = new Card(data, '#card-template');
+    return card.generateCard();
+};
+
+const cardList = new Section(
+    {
+        cards: initialCards,
+        renderer: (data) => {
+            console.log('hi');
+            cardList.addCard(createCard(data));
+        },
+    },
+    cardSection,
+);
+createCard(initialCards);
+cardList.renderCard();
+
+// createCard(initialCards);

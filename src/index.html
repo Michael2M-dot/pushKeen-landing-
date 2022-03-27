@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="src/pages/index.css" />
+        <link rel="stylesheet" href="pages/index.css" />
         <title></title>
     </head>
     <body class="page">
@@ -40,7 +40,7 @@
                     </p>
                     <img
                         class="lead__image"
-                        src="src/images/mask_3.png"
+                        src="images/mask_3.png"
                         alt="bubbles"
                     />
                     <div class="lead__lable">
@@ -141,7 +141,7 @@
                 <section class="intro content__section section">
                     <img
                         class="intro__image"
-                        src="src/images/mask_4.png"
+                        src="images/mask_4.png"
                         alt="ручки"
                     />
                 </section>
@@ -178,39 +178,39 @@
                         <div
                             class="gradient photo-grid__gradient photo-grid__gradient_right"
                         ></div>
-                        <ul class="photo-grid__slider">
-                            <li class="photo-grid__item">
-                                <img
-                                    class="photo-grid__slider-pic"
-                                    src="src/images/pic-2.png"
-                                    alt="очень красивое фото"
-                                />
-                                <p class="photo-grid__pic-author">
-                                    Елена денисова
-                                </p>
-                            </li>
-                            <li class="photo-grid__item">
-                                <img
-                                    class="photo-grid__slider-pic photo-grid__slider-pic_active"
-                                    src="src/images/pic-1.png"
-                                    alt="очень красивое фото"
-                                />
-                                <p
-                                    class="photo-grid__pic-author photo-grid__pic-author_active"
-                                >
-                                    Елена денисова
-                                </p>
-                            </li>
-                            <li class="photo-grid__item">
-                                <img
-                                    class="photo-grid__slider-pic"
-                                    src="src/images/pic-3.png"
-                                    alt="очень красивое фото"
-                                />
-                                <p class="photo-grid__pic-author">
-                                    Елена денисова
-                                </p>
-                            </li>
+                        <ul class="photo-grid__slider" id="card-section">
+                            <!--                            <li class="photo-grid__item">-->
+                            <!--                                <img-->
+                            <!--                                    class="photo-grid__slider-pic"-->
+                            <!--                                    src="images/pic-2.png"-->
+                            <!--                                    alt="очень красивое фото"-->
+                            <!--                                />-->
+                            <!--                                <p class="photo-grid__pic-author">-->
+                            <!--                                    Елена денисова-->
+                            <!--                                </p>-->
+                            <!--                            </li>-->
+                            <!--                            <li class="photo-grid__item">-->
+                            <!--                                <img-->
+                            <!--                                    class="photo-grid__slider-pic photo-grid__slider-pic_active"-->
+                            <!--                                    src="images/pic-1.png"-->
+                            <!--                                    alt="очень красивое фото"-->
+                            <!--                                />-->
+                            <!--                                <p-->
+                            <!--                                    class="photo-grid__pic-author photo-grid__pic-author_active"-->
+                            <!--                                >-->
+                            <!--                                    Елена денисова-->
+                            <!--                                </p>-->
+                            <!--                            </li>-->
+                            <!--                            <li class="photo-grid__item">-->
+                            <!--                                <img-->
+                            <!--                                    class="photo-grid__slider-pic"-->
+                            <!--                                    src="images/pic-3.png"-->
+                            <!--                                    alt="очень красивое фото"-->
+                            <!--                                />-->
+                            <!--                                <p class="photo-grid__pic-author">-->
+                            <!--                                    Елена денисова-->
+                            <!--                                </p>-->
+                            <!--                            </li>-->
                         </ul>
                     </div>
                     <div class="photo-grid__nav-bar">
@@ -259,7 +259,7 @@
                             </p>
                             <img
                                 class="photo-grid__author-pic"
-                                src="src/images/pic-elena.png"
+                                src="images/pic-elena.png"
                                 alt="Фото автора"
                             />
                         </div>
@@ -294,7 +294,60 @@
             </main>
         </div>
 
-<!--        Подключаем скрипты      -->
-        <script type="module" src="src/scripts/utils/initialCards.js"></script>
+        <template class="element__template" id="card-template">
+                <li class="photo-grid__item" id="element">
+                    <img class="photo-grid__slider-pic" src="" alt="" />
+                    <p class="photo-grid__pic-author"></p>
+                    <div class="photo-grid__author">
+                        <div class="photo-grid__story">
+                            <span class="photo-grid__quote">бб</span>
+                            <p class="photo-grid__paragraph"></p>
+                            <span
+                                class="photo-grid__quote photo-grid__quote_lower"
+                                >бб</span
+                            >
+                        </div>
+                        <div class="photo-grid__picture-container">
+                            <p class="photo-grid__pic-subtitle">60 tokens</p>
+                            <p class="photo-grid__author-nickname">&#64;</p>
+                            <img class="photo-grid__author-pic" src="" alt="" />
+                        </div>
+                    </div>
+                </li>
+                <div class="photo-grid__author">
+                    <div class="photo-grid__story">
+                        <span class="photo-grid__quote">бб</span>
+                        <p class="photo-grid__paragraph">
+                            Фрилансер моушн дизайнер, иллюстратор и энтузиаст
+                            Бэн Марриот из Сиднея собирает классные свежие
+                            подборки анимационных работ. У него хороший вкус и
+                            выбранные ним работы точно вдохновят вас на что-то
+                            клёвое. От рекламных роликов до снимков продукта,
+                            маркетинговых кампаний и дизайна игр, используя
+                            возможности 3D открываются новые двери для
+                            отображения картин.
+                        </p>
+                        <span class="photo-grid__quote photo-grid__quote_lower"
+                            >бб</span
+                        >
+                    </div>
+                    <div class="photo-grid__picture-container">
+                        <p class="photo-grid__pic-subtitle">60 tokens</p>
+                        <p class="photo-grid__author-nickname">&#64;elena</p>
+                        <img
+                            class="photo-grid__author-pic"
+                            src="images/pic-elena.png"
+                            alt="Фото автора"
+                        />
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <!--        Подключаем скрипты      -->
+        <script type="module" src="./pages/index.js"></script>
+        <script type="module" src="./scripts/components/Card.js"></script>
+        <script type="module" src="./scripts/components/Section.js"></script>
+        <script type="module" src="./scripts/utils/initialCards.js"></script>
     </body>
 </html>

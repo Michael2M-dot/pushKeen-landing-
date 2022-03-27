@@ -5,8 +5,8 @@
     "main": "index.js",
     "scripts": {
         "test": "test",
-        "stylelint": "stylelint '**/*{.css,.scss}'",
-        "stylelint:fix": "stylelint '**/*{.css,.scss}' --fix",
+        "stylelint": "stylelint '**/*{.css,.scss,.js}'",
+        "stylelint:fix": "stylelint '**/*{.css,.scss,.js}' --fix",
         "prettier": "npx prettier --write ."
     },
     "husky": {
@@ -15,7 +15,7 @@
         }
     },
     "lint-staged": {
-        "*.{html,css,scss}": [
+        "*.{html,css,scss,js}": [
             "prettier --write",
             "stylelint --fix",
             "git add"
