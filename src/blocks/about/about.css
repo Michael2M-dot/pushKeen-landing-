@@ -1,11 +1,13 @@
 .about {
     margin: 0 auto;
-    padding: 73px 0 56px 236px;
+    padding: 73px 0 58px 236px;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
+
+    /*background: linear-gradient(180deg, #000000 29.71%, rgba(0, 0, 0, 0) 83.91%);*/
 }
 
 .about__title {
@@ -15,6 +17,7 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 38px;
+    letter-spacing: 0.02em;
     text-transform: uppercase;
     color: var(--blue);
 }
@@ -50,12 +53,12 @@
 
 .about__paragraph {
     width: 363px;
-    margin: 0 auto 30px 0;
+    margin: 0 auto 34px 0;
     font-family: 'OpenSans', Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 26px;
     color: var(--gray-3);
 }
 
@@ -96,6 +99,6 @@
 
 .about__side-bar_left {
     position: absolute;
-    top: 40px;
+    top: 36px;
     left: 142px;
 }
