@@ -5,8 +5,8 @@
 }
 
 .photo-grid__btm-list {
-    /*width: 100%;*/
-    margin: 0 auto 85px;
+    padding: 0;
+    margin: 0 auto 82px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -19,7 +19,8 @@
 }
 
 .photo-grid__btn {
-    padding: 5px 65px 9px;
+    min-width: 192px;
+    padding: 5px 45px 9px;
     font-family: 'OpenSans', Helvetica, sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -33,7 +34,7 @@
 }
 
 .photo-grid__nav-bar {
-    margin: 22px 154px 38px 228px;
+    margin: 0 154px 34px 228px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -45,7 +46,7 @@
 }
 
 .photo-grid__slider-container {
-    margin: 0 100px 32px;
+    margin: 0 100px 20px;
     position: relative;
 }
 
@@ -63,7 +64,7 @@
 }
 
 .photo-grid__item {
-    margin: 0 0 0 70px;
+    margin: 0 0 0 140px;
 }
 
 .photo-grid__slider-pic {
@@ -207,7 +208,7 @@
 
 .photo-grid__side-bar_left {
     position: absolute;
-    top: 200px;
+    top: 180px;
     left: 142px;
     z-index: 10;
 }
