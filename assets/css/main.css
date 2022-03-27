@@ -7,8 +7,10 @@
     --gray-4: #303435;
     --gray-6: #535353;
     --gray-7: #8a8a8a;
+    --gray-8: #272727;
     --blue: #04f1ff;
     --white: #ffffff;
+    --black: #000000;
 
     /*backgrounds*/
     --background: var(--gray);

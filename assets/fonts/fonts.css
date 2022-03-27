@@ -27,13 +27,14 @@
 }
 
 @font-face {
-    font-family: 'Tippytoes';
+    font-family: 'TippyToes';
     font-weight: 700;
-    src: url('./assets/fonts/TippytoesBold.ttf') format('ttf');
+    src: url('./TippyToes-Bold.ttf.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Tippytoes';
+    font-family: 'TippyToes';
     font-weight: 800;
-    src: url('./assets/fonts/TippytoesXTraBold.ttf') format('ttf');
+    src: url('./tippytoesxtrabold.woff2') format('woff2'),
+        url('./tippytoesxtrabold.woff') format('woff');
 }

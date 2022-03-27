@@ -1,0 +1,6 @@
+.gradient {
+    background: linear-gradient(
+        90deg, #202020 48.54%, rgba(32, 32, 32, 0) 88.03%
+    );
+    z-index: 1;
+}

@@ -1,0 +1,9 @@
+.content {
+    flex-shrink: 0;
+    /*display: grid;*/
+}
+
+.content__section {
+    width: 100%;
+    margin: 0 auto;
+}

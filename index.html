@@ -29,14 +29,269 @@
                     >
                 </nav>
             </header>
+            <main class="content page__content">
+                <!--   Секция LEAD     -->
+                <section class="lead content__section section">
+                    <div class="lead__image-bg"></div>
+                    <h1 class="lead__title">Bubble Drop</h1>
+                    <p class="lead__text">
+                        Рассмотрим основные развивающиеся тренды 2022 года в
+                        моушн дизайне.
+                    </p>
+                    <img
+                        class="lead__image"
+                        src="./assets/images/mask_3.png"
+                        alt="bubbles"
+                    />
+                    <div class="lead__lable">
+                        <svg class="lead__lable-logo">
+                            <use
+                                xlink:href="../../assets/images/icons_sprite.svg#icon__binance"
+                            />
+                        </svg>
+                        <div class="lead__lable-container">
+                            <p class="lead__lable-text">420 tokens</p>
+                        </div>
+                    </div>
+                    <!--      side-bar левый и правый секции LEAD    -->
+                    <div class="side-bar lead__side-bar_left">
+                        <h3 class="side-bar__title side-bar__title_vertical-rl">
+                            New collection
+                        </h3>
+                        <ul class="side-bar__list">
+                            <li class="side-bar__item">
+                                <a class="side-bar__link side-bar__link_active"
+                                    >01</a
+                                >
+                            </li>
+                            <li
+                                class="side-bar__item side-bar__link-divider"
+                            ></li>
+                            <li class="side-bar__item">
+                                <a class="side-bar__link">02</a>
+                            </li>
+                            <li class="side-bar__item">
+                                <a class="side-bar__link">03</a>
+                            </li>
+                            <li class="side-bar__item">
+                                <a class="side-bar__link">04</a>
+                            </li>
+                            <li class="side-bar__item">
+                                <a class="side-bar__link">05</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="side-bar lead__side-bar_right">
+                        <h3 class="side-bar__title side-bar__title_vertical-lr">
+                            PUSHKEEN & BACK TO THE ROOTS
+                        </h3>
+                    </div>
+                </section>
 
-            <section class="intro page__intro section">
-                <img
-                    class="intro__mask1"
-                    src="./assets/images/mask_1.png"
-                    alt="rock"
-                />
-            </section>
+                <!-- Секция О ПРОЕКТЕ  -->
+                <section class="about content__section section">
+                    <h3 class="about__title">О проекте</h3>
+                    <p class="about__paragraph">
+                        Затронем тенденции, начиная с фильмов и коммерческой
+                        рекламы, до тематических исследований и всего, что между
+                        ними. Вы не увидели бы эту статью без бесчисленных
+                        вкладов.
+                    </p>
+                    <svg class="about__logo">
+                        <use
+                            xlink:href="../../assets/images/icons_sprite.svg#icon_gq"
+                        />
+                    </svg>
+                    <a class="about__link" href="#">Читать больше в статье </a>
+                    <div class="about__image"></div>
+                    <svg class="about__point">
+                        <use
+                            xlink:href="../../assets/images/icons_sprite.svg#map_point"
+                        />
+                    </svg>
+                    <h4 class="about__subtitle">Команда Bubble</h4>
+                    <!-- side -bar секции О ПРОЕКТЕ-->
+                    <div class="side-bar about__side-bar_left">
+                        <ul class="side-bar__list">
+                            <li class="side-bar__item">
+                                <a class="side-bar__link">01</a>
+                            </li>
+                            <li class="side-bar__item">
+                                <a class="side-bar__link side-bar__link_active"
+                                    >02</a
+                                >
+                            </li>
+                            <li
+                                class="side-bar__item side-bar__link-divider"
+                            ></li>
+                            <li class="side-bar__item">
+                                <a class="side-bar__link">03</a>
+                            </li>
+                            <li class="side-bar__item">
+                                <a class="side-bar__link">04</a>
+                            </li>
+                            <li class="side-bar__item">
+                                <a class="side-bar__link">05</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!--  Секция INTRO -->
+                <section class="intro content__section section">
+                    <img
+                        class="intro__image"
+                        src="./assets/images/mask_4.png"
+                        alt="ручки"
+                    />
+                </section>
+
+                <!--  Секция ФОТО-ГРИД  -->
+                <section class="photo-grid content__section section">
+                    <ul class="photo-grid__btm-list">
+                        <li class="photo-grid__btm-item">
+                            <button
+                                arial-lable="Выбрать редкие фотографии"
+                                title="переключить"
+                                type="button"
+                                class="button button_primary photo-grid__btn"
+                                id=""
+                            >
+                                Редкие
+                            </button>
+                        </li>
+                        <li class="photo-grid__btm-item">
+                            <button
+                                arial-lable="Выбрать очень редкие фотографии"
+                                title="переключить"
+                                type="button"
+                                class="button button_secondary photo-grid__btn"
+                            >
+                                Очень редкие
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="photo-grid__slider-container">
+                        <div
+                            class="gradient photo-grid__gradient photo-grid__gradient_left"
+                        ></div>
+                        <div
+                            class="gradient photo-grid__gradient photo-grid__gradient_right"
+                        ></div>
+                        <ul class="photo-grid__slider">
+                            <li class="photo-grid__item">
+                                <img
+                                    class="photo-grid__slider-pic"
+                                    src="assets/images/pic-2.png"
+                                    alt="очень красивое фото"
+                                />
+                                <p class="photo-grid__pic-author">
+                                    Елена денисова
+                                </p>
+                            </li>
+                            <li class="photo-grid__item">
+                                <img
+                                    class="photo-grid__slider-pic photo-grid__slider-pic_active"
+                                    src="assets/images/pic-1.png"
+                                    alt="очень красивое фото"
+                                />
+                                <p
+                                    class="photo-grid__pic-author photo-grid__pic-author_active"
+                                >
+                                    Елена денисова
+                                </p>
+                            </li>
+                            <li class="photo-grid__item">
+                                <img
+                                    class="photo-grid__slider-pic"
+                                    src="assets/images/pic-3.png"
+                                    alt="очень красивое фото"
+                                />
+                                <p class="photo-grid__pic-author">
+                                    Елена денисова
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="photo-grid__nav-bar">
+                        <button
+                            class="button button_secondary photo-grid__nav-button"
+                        >
+                            <svg class="button__icon button__icon_left">
+                                <use
+                                    xlink:href="../../assets/images/icons_sprite.svg#icon_arrow"
+                                />
+                            </svg>
+                        </button>
+                        <h4 class="photo-grid__nickname">&#171;bub1&#187;</h4>
+                        <button
+                            class="button button_primary photo-grid__nav-button"
+                        >
+                            <svg class="button__icon button__icon_active">
+                                <use
+                                    xlink:href="../../assets/images/icons_sprite.svg#icon_arrow"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="photo-grid__author">
+                        <div class="photo-grid__story">
+                            <span class="photo-grid__quote">бб</span>
+                            <p class="photo-grid__paragraph">
+                                Фрилансер моушн дизайнер, иллюстратор и
+                                энтузиаст Бэн Марриот из Сиднея собирает
+                                классные свежие подборки анимационных работ. У
+                                него хороший вкус и выбранные ним работы точно
+                                вдохновят вас на что-то клёвое. От рекламных
+                                роликов до снимков продукта, маркетинговых
+                                кампаний и дизайна игр, используя возможности 3D
+                                открываются новые двери для отображения картин.
+                            </p>
+                            <span
+                                class="photo-grid__quote photo-grid__quote_lower"
+                                >бб</span
+                            >
+                        </div>
+                        <div class="photo-grid__picture-container">
+                            <p class="photo-grid__pic-subtitle">60 tokens</p>
+                            <p class="photo-grid__author-nickname">
+                                &#64;elena
+                            </p>
+                            <img
+                                class="photo-grid__author-pic"
+                                src="assets/images/pic-elena.png"
+                                alt="Фото автора"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- side-bar блока photo-grid -->
+                    <div class="side-bar photo-grid__side-bar_left">
+                        <ul class="side-bar__list">
+                            <li class="side-bar__item">
+                                <a class="side-bar__link">01</a>
+                            </li>
+                            <li class="side-bar__item">
+                                <a class="side-bar__link">02</a>
+                            </li>
+                            <li class="side-bar__item">
+                                <a class="side-bar__link side-bar__link_active"
+                                    >03</a
+                                >
+                            </li>
+                            <li
+                                class="side-bar__item side-bar__link-divider"
+                            ></li>
+                            <li class="side-bar__item">
+                                <a class="side-bar__link">04</a>
+                            </li>
+                            <li class="side-bar__item">
+                                <a class="side-bar__link">05</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
         </div>
     </body>
 </html>

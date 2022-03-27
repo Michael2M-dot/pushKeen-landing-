@@ -20,6 +20,10 @@
     margin: 0 auto 8px;
 }
 
+.page__content {
+    margin: 0 auto;
+}
+
 .page__intro {
     width: 100%;
     min-height: 1485px;
