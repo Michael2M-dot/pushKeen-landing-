@@ -1,16 +1,16 @@
 @import url('../assets/css/normalize.css');
 @import url('../assets/css/main.css');
-@import url('../assets/fonts/fonts.css');
+@import url('../vendors/fonts/fonts.css');
 
 /* стили для компонентов */
-@import url('../components/page/page.css');
-@import url('../components/header/header.css');
-@import url('../components/content/content.css');
-@import url('../components/section/section.css');
-@import url('../components/lead/lead.css');
-@import url('../components/intro/intro.css');
-@import url('../components/photo-grid/photo-grid.css');
-@import url('../components/button/button.css');
-@import url('../components/side-bar/side-bar.css');
-@import url('../components/about/about.css');
-@import url('../components/gradient/gradient.css');
+@import url('../blocks/page/page.css');
+@import url('../blocks/header/header.css');
+@import url('../blocks/content/content.css');
+@import url('../blocks/section/section.css');
+@import url('../blocks/lead/lead.css');
+@import url('../blocks/intro/intro.css');
+@import url('../blocks/photo-grid/photo-grid.css');
+@import url('../blocks/button/button.css');
+@import url('../blocks/side-bar/side-bar.css');
+@import url('../blocks/about/about.css');
+@import url('../blocks/gradient/gradient.css');

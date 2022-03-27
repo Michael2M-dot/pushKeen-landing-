@@ -1,40 +1,40 @@
 @font-face {
     font-family: 'OpenSans';
     font-weight: 400;
-    src: url('./OpenSans-Regular.woff') format('woff'),
-        url('./OpenSans-Regular.woff2') format('woff2');
+    src: url('OpenSans-Regular.woff') format('woff'),
+        url('OpenSans-Regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'OpenSans';
     font-weight: 600;
-    src: url('./OpenSans-SemiBold.woff') format('woff'),
-        url('./OpenSans-SemiBold.woff2') format('woff2');
+    src: url('OpenSans-SemiBold.woff') format('woff'),
+        url('OpenSans-SemiBold.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'OpenSans';
     font-weight: 700;
-    src: url('./OpenSans-Bold.woff') format('woff'),
-        url('./OpenSans-Bold.woff2') format('woff2');
+    src: url('OpenSans-Bold.woff') format('woff'),
+        url('OpenSans-Bold.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'OpenSans';
     font-weight: 800;
-    src: url('./OpenSans-ExtraBold.woff') format('woff'),
-        url('./OpenSans-ExtraBold.woff2') format('woff2');
+    src: url('OpenSans-ExtraBold.woff') format('woff'),
+        url('OpenSans-ExtraBold.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'TippyToes';
     font-weight: 700;
-    src: url('./TippyToes-Bold.ttf.woff') format('woff');
+    src: url('TippyToes-Bold.ttf.woff') format('woff');
 }
 
 @font-face {
     font-family: 'TippyToes';
     font-weight: 800;
-    src: url('./tippytoesxtrabold.woff2') format('woff2'),
-        url('./tippytoesxtrabold.woff') format('woff');
+    src: url('tippytoesxtrabold.woff2') format('woff2'),
+        url('tippytoesxtrabold.woff') format('woff');
 }
