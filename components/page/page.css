@@ -9,6 +9,10 @@
     max-width: 1295px;
     min-width: 1295px;
     margin: 0 auto;
+    transform-style: preserve-3d;
+    perspective: 1px;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .page__container_main {

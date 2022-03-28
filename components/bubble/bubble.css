@@ -1,0 +1,7 @@
+.bubble {
+    background-image: url("./../../assets/images/bubble.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}

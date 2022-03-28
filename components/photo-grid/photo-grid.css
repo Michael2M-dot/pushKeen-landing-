@@ -2,6 +2,7 @@
     position: relative;
     font-family: 'OpenSans', Helvetica, sans-serif;
     padding-top: 82px;
+    background: var(--background);
 }
 
 .photo-grid__btm-list {

@@ -1,6 +1,13 @@
 .content {
+    width: 100vw;
+    height: 100vh;
     flex-shrink: 0;
-    /*display: grid;*/
+
+    /*parallax*/
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .content__section {
