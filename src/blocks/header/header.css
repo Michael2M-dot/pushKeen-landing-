@@ -43,7 +43,7 @@
 .header__lang-link {
     text-transform: uppercase;
     text-decoration: none;
-    transition: opacity .3s ease-in .3s;
+    transition: opacity 0.3s ease-in 0.3s;
     cursor: pointer;
 }
 
@@ -52,5 +52,5 @@
 }
 
 .header__lang-link:hover {
-    opacity: .8;
+    opacity: 0.8;
 }
