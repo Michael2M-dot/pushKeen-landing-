@@ -6,7 +6,6 @@ const itemImage = item.querySelector('.photo-grid__slider-pic');
 const itemAuthor = item.querySelector('.photo-grid__pic-author');
 const nextBtn = section.querySelector('#btn-next');
 const prevBtn = section.querySelector('#btn-prev');
-const nickNames = section.querySelectorAll('.photo-grid__nickname');
 const paragraph = section.querySelector('.photo-grid__paragraph');
 const authorPicture = section.querySelector('.photo-grid__author-pic');
 const nickName = section.querySelector('.photo-grid__nickname');
@@ -17,10 +16,6 @@ showSlides(currentIndex);
 function showSlides(n) {
     items.forEach((item) => {
         item.setAttribute('style', 'order: 1');
-    });
-
-    nickNames.forEach((item) => {
-        item.classList.remove('photo-grid__nickname_active');
     });
 
     paragraph.textContent = '';
