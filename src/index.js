@@ -11,7 +11,7 @@ const paragraph = section.querySelector('.photo-grid__paragraph');
 const authorPicture = section.querySelector('.photo-grid__author-pic');
 
 let currentIndex = 0;
-showSlides(currentIndex);
+showSlides(currentIndex +=1);
 
 function showSlides(n) {
     items.forEach((item) => {
@@ -71,15 +71,19 @@ function showSlides(n) {
 }
 
 nextBtn.addEventListener('click', (e) => {
-    console.log('hi');
-    console.log('inner', currentIndex);
+    prevBtn.classList.remove('button__icon_active');
+    nextBtn.classList.add('button__icon_active');
+    // console.log('hi');
+    // console.log('inner', currentIndex);
     showSlides(currentIndex);
     currentIndex += 1;
-    console.log('outer', currentIndex);
+    // console.log('outer', currentIndex);
 });
 
 prevBtn.addEventListener('click', (e) => {
-    console.log('hi1');
+    prevBtn.classList.add('button__icon_active');
+    nextBtn.classList.remove('button__icon_active');
+    // console.log('hi1');
     showSlides(currentIndex);
     currentIndex -= 1;
 });

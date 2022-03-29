@@ -17,8 +17,9 @@
 }
 
 .button_primary {
-    background: var(--blue);
-    color: var(--black);
+    background: var(--background);
+    border: 1px solid var(--blue);
+    color: var(--blue);
 }
 
 .button_primary:hover {
