@@ -15,3 +15,4 @@ https://www.figma.com/file/ILvaHpXxsjBJsqkgXFzuVi/%D1%82%D0%B5%D1%81%D1%82%D0%BE
 5. Общие замечания после ревью.
 6. Провести сборку проекта webpack-ом.
 
+**[Ссылка на GitHub-Pages](https://michael2m-dot.github.io/pushKeen-landing-/)**
