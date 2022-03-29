@@ -73,12 +73,6 @@
     color: var(--white);
 }
 
-.about_side-bar {
-    position: absolute;
-    top: 40px;
-    left: 210px;
-}
-
 .about__paragraph {
     width: 363px;
     margin: 0 auto 34px 0;
@@ -117,6 +111,6 @@
 
 .about__side-bar_left {
     position: absolute;
-    top: 36px;
+    top: 380px;
     left: 142px;
 }
