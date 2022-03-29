@@ -6,9 +6,9 @@ const itemImage = item.querySelector('.photo-grid__slider-pic');
 const itemAuthor = item.querySelector('.photo-grid__pic-author');
 const nextBtn = section.querySelector('#btn-next');
 const prevBtn = section.querySelector('#btn-prev');
-const nickNames = section.querySelectorAll('.photo-grid__nickname');
 const paragraph = section.querySelector('.photo-grid__paragraph');
 const authorPicture = section.querySelector('.photo-grid__author-pic');
+const nickName = section.querySelector('.photo-grid__nickname');
 
 let currentIndex = 0;
 showSlides(currentIndex);
@@ -16,10 +16,6 @@ showSlides(currentIndex);
 function showSlides(n) {
     items.forEach((item) => {
         item.setAttribute('style', 'order: 1');
-    });
-
-    nickNames.forEach((item) => {
-        item.classList.remove('photo-grid__nickname_active');
     });
 
     paragraph.textContent = '';
@@ -54,32 +50,22 @@ function showSlides(n) {
         prevIndex = index - 1;
     }
 
-    // console.log("prevIndex", prevIndex);
-    // console.log("currentIndex",index);
-    // console.log("nextIndex", nextIndex);
-
     items[prevIndex].setAttribute('style', 'order: -2');
     items[index].setAttribute('style', 'order: -1');
     items[nextIndex].setAttribute('style', 'order: 0');
-    nickNames[index].classList.add('photo-grid__nickname_active');
     paragraph.textContent = initialCards[index].text;
+    nickName.textContent = `«${initialCards[index].nickname}»`;
     authorPicture.src = `./assets/images/${initialCards[index].photo}`;
-
-    // console.log(prevIndex, getComputedStyle(items[prevIndex]).order);
-    // console.log(getComputedStyle(items[index]).order);
-    // console.log(getComputedStyle(items[nextIndex]).order);
 }
 
 nextBtn.addEventListener('click', (e) => {
-    console.log('hi');
-    console.log('inner', currentIndex);
-    showSlides(currentIndex);
-    currentIndex += 1;
-    console.log('outer', currentIndex);
+    prevBtn.classList.remove('button__icon_active');
+    nextBtn.classList.add('button__icon_active');
+    showSlides(currentIndex +=1);
 });
 
 prevBtn.addEventListener('click', (e) => {
-    console.log('hi1');
-    showSlides(currentIndex);
-    currentIndex -= 1;
+    prevBtn.classList.add('button__icon_active');
+    nextBtn.classList.remove('button__icon_active');
+    showSlides(currentIndex -=1);
 });

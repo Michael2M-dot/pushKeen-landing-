@@ -119,7 +119,7 @@
 }
 
 .photo-grid__nickname {
-    display: none;
+    /*display: none;*/
     margin: 0;
     font-family: 'TippyToes', Helvetica, sans-serif;
     font-style: normal;
