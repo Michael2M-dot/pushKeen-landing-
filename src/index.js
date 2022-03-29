@@ -1,3 +1,4 @@
+
 const section = document.querySelector('.photo-grid');
 const container = section.querySelector('.photo-grid__container');
 const items = container.querySelectorAll('.photo-grid__item');
@@ -7,6 +8,9 @@ const itemAuthor = item.querySelector('.photo-grid__pic-author');
 const nextBtn = section.querySelector('#btn-next');
 const prevBtn = section.querySelector('#btn-prev');
 const nickNames = section.querySelectorAll('.photo-grid__nickname');
+const paragraph = section.querySelector('.photo-grid__paragraph');
+const authorPicture = section.querySelector('.photo-grid__author-pic');
+
 
 let currentIndex = 0;
 showSlides(currentIndex);
@@ -21,6 +25,8 @@ function showSlides(n) {
   nickNames.forEach(item => {
     item.classList.remove('photo-grid__nickname_active');
   })
+
+  paragraph.textContent = '';
 
 
   let index = n;
@@ -63,6 +69,9 @@ function showSlides(n) {
   items[index].setAttribute('style','order: -1');
   items[nextIndex].setAttribute('style','order: 0');
   nickNames[index].classList.add('photo-grid__nickname_active');
+  paragraph.textContent = initialCards[index].text;
+  authorPicture.src = `./assets/images/${initialCards[index].photo}`;
+
   // console.log(prevIndex, getComputedStyle(items[prevIndex]).order);
   // console.log(getComputedStyle(items[index]).order);
   // console.log(getComputedStyle(items[nextIndex]).order);
