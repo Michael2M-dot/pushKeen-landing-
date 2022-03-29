@@ -7,7 +7,7 @@
         <title></title>
     </head>
     <body class="page">
-        <div class="page__container page__container_main section">
+        <div class="page__container">
             <header class="header page__header section">
                 <h2 class="header__title">2021*</h2>
                 <h2 class="header__title">2022</h2>
@@ -38,11 +38,6 @@
                         Рассмотрим основные развивающиеся тренды 2022 года в
                         моушн дизайне.
                     </p>
-                    <img
-                        class="lead__image"
-                        src="./assets/images/mask_3.png"
-                        alt="bubbles"
-                    />
                     <div class="lead__lable">
                         <svg class="lead__lable-logo">
                             <use
@@ -90,20 +85,25 @@
 
                 <!-- Секция О ПРОЕКТЕ  -->
                 <section class="about content__section section">
-                    <h3 class="about__title">О проекте</h3>
-                    <p class="about__paragraph">
-                        Затронем тенденции, начиная с фильмов и коммерческой
-                        рекламы, до тематических исследований и всего, что между
-                        ними. Вы не увидели бы эту статью без бесчисленных
-                        вкладов.
-                    </p>
-                    <svg class="about__logo">
-                        <use
-                            xlink:href="../../assets/images/icons_sprite.svg#icon_gq"
-                        />
-                    </svg>
-                    <a class="about__link" href="#">Читать больше в статье </a>
-                    <div class="about__image"></div>
+                    <div class="bubble about__bubble"></div>
+                    <div class="about__text-container">
+                        <h3 class="about__title">О проекте</h3>
+                        <p class="about__paragraph">
+                            Затронем тенденции, начиная с фильмов и коммерческой
+                            рекламы, до тематических исследований и всего, что
+                            между ними. Вы не увидели бы эту статью без
+                            бесчисленных вкладов.
+                        </p>
+                        <svg class="about__logo">
+                            <use
+                                xlink:href="../../assets/images/icons_sprite.svg#icon_gq"
+                            />
+                        </svg>
+                        <a class="about__link" href="#"
+                            >Читать больше в статье
+                        </a>
+                    </div>
+                    <div class="map about__map"></div>
                     <svg class="about__point">
                         <use
                             xlink:href="../../assets/images/icons_sprite.svg#map_point"
@@ -137,13 +137,9 @@
                     </div>
                 </section>
 
-                <!--  Секция INTRO -->
-                <section class="intro content__section section">
-                    <img
-                        class="intro__image"
-                        src="./assets/images/mask_4.png"
-                        alt="ручки"
-                    />
+                <!--  Секция PARALLAX -->
+                <section class="parallax content__section section">
+                    <!--                    <div class="parallax"></div>-->
                 </section>
 
                 <!--  Секция ФОТО-ГРИД  -->
@@ -171,18 +167,13 @@
                             </button>
                         </li>
                     </ul>
-                    <div class="photo-grid__slider-container">
-                        <div
-                            class="gradient photo-grid__gradient photo-grid__gradient_left"
-                        ></div>
-                        <div
-                            class="gradient photo-grid__gradient photo-grid__gradient_right"
-                        ></div>
-                        <ul class="photo-grid__slider">
+
+                    <div class="photo-grid__container">
+                        <ul class="photo-grid__track">
                             <li class="photo-grid__item">
                                 <img
                                     class="photo-grid__slider-pic"
-                                    src="assets/images/pic-2.png"
+                                    src="assets/images/pic-1.png"
                                     alt="очень красивое фото"
                                 />
                                 <p class="photo-grid__pic-author">
@@ -191,14 +182,12 @@
                             </li>
                             <li class="photo-grid__item">
                                 <img
-                                    class="photo-grid__slider-pic photo-grid__slider-pic_active"
-                                    src="assets/images/pic-1.png"
+                                    class="photo-grid__slider-pic"
+                                    src="assets/images/pic-2.png"
                                     alt="очень красивое фото"
                                 />
-                                <p
-                                    class="photo-grid__pic-author photo-grid__pic-author_active"
-                                >
-                                    Елена денисова
+                                <p class="photo-grid__pic-author">
+                                    света белая
                                 </p>
                             </li>
                             <li class="photo-grid__item">
@@ -208,7 +197,17 @@
                                     alt="очень красивое фото"
                                 />
                                 <p class="photo-grid__pic-author">
-                                    Елена денисова
+                                    надя авдеева
+                                </p>
+                            </li>
+                            <li class="photo-grid__item">
+                                <img
+                                    class="photo-grid__slider-pic"
+                                    src="assets/images/pic-4.png"
+                                    alt="очень красивое фото"
+                                />
+                                <p class="photo-grid__pic-author">
+                                    макс кулагин
                                 </p>
                             </li>
                         </ul>
@@ -216,6 +215,7 @@
                     <div class="photo-grid__nav-bar">
                         <button
                             class="button button_secondary photo-grid__nav-button"
+                            id="btn-prev"
                         >
                             <svg class="button__icon button__icon_left">
                                 <use
@@ -224,8 +224,12 @@
                             </svg>
                         </button>
                         <h4 class="photo-grid__nickname">&#171;bub1&#187;</h4>
+                        <h4 class="photo-grid__nickname">&#171;bub2&#187;</h4>
+                        <h4 class="photo-grid__nickname">&#171;bub3&#187;</h4>
+                        <h4 class="photo-grid__nickname">&#171;bub4&#187;</h4>
                         <button
                             class="button button_primary photo-grid__nav-button"
+                            id="btn-next"
                         >
                             <svg class="button__icon button__icon_active">
                                 <use
@@ -259,7 +263,7 @@
                             </p>
                             <img
                                 class="photo-grid__author-pic"
-                                src="assets/images/pic-elena.png"
+                                src=""
                                 alt="Фото автора"
                             />
                         </div>
@@ -293,5 +297,8 @@
                 </section>
             </main>
         </div>
+
+        <script type="text/javascript" src="src/initialCards.js"></script>
+        <script type="text/javascript" src="src/index.js"></script>
     </body>
 </html>
