@@ -12,13 +12,14 @@
     left: 0;
     right: 0;
     bottom: 0;
+    min-width: 1449px;
     min-height: 1054px;
     z-index: -10;
     transform-origin: center;
     background-image: url("./../../assets/images/mask_4.png");
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 
-    transform: translateZ(-.5px) scale(1.5);
+    transform: translateZ(-1px) scale(3);
 }

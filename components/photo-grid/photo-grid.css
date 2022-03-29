@@ -3,6 +3,7 @@
     font-family: 'OpenSans', Helvetica, sans-serif;
     padding-top: 82px;
     background: var(--background);
+    overflow: hidden;
 }
 
 .photo-grid__btm-list {
@@ -46,26 +47,42 @@
     padding: 13px 16px;
 }
 
-.photo-grid__slider-container {
-    margin: 0 100px 20px;
+.photo-grid__container {
+    margin: 0 auto 22px 224px;
+    width: 950px;
+    height: 321px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
     position: relative;
+    overflow: hidden;
 }
 
-.photo-grid__slider {
-    max-width: 1295px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: relative;
+.photo-grid__container::after {
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    width:950px;
+    height:321px;
+    margin:0 auto;
+    background: linear-gradient(90deg, rgba(32,32,32,1) 0%, rgba(255,255,255,0) 20%, rgba(255,255,255,0) 20%, rgba(32,32,32,1) 100%);
+}
+
+.photo-grid__track {
+    --gap: 120px;
+    margin-left: -200px;
+    width:100%;
+    height: 200px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: end;
-    /*overflow: hidden;*/
-}
-
-.photo-grid__item {
-    margin: 0 0 0 140px;
+    justify-content: start;
+    align-items: flex-end;
+    gap: var(--gap);
+    transition: .2s;
+    justify-self: flex-end;
 }
 
 .photo-grid__slider-pic {
@@ -94,25 +111,8 @@
     color: var(--blue);
 }
 
-.photo-grid__gradient {
-    width: 400px;
-    height: 300px;
-}
-
-.photo-grid__gradient_left {
-    position: absolute;
-    top: -10px;
-    left: -80px;
-}
-
-.photo-grid__gradient_right {
-    position: absolute;
-    top: -10px;
-    right: -150px;
-    transform: rotate(180deg);
-}
-
 .photo-grid__nickname {
+    display: none;
     margin: 0;
     font-family: 'TippyToes', Helvetica, sans-serif;
     font-style: normal;
@@ -120,6 +120,10 @@
     font-size: 50px;
     line-height: 60px;
     color: var(--white);
+}
+
+.photo-grid__nickname_active {
+    display: block;
 }
 
 .photo-grid__author {
