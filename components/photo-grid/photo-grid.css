@@ -59,29 +59,35 @@
 }
 
 .photo-grid__container::after {
-    content:'';
-    position:absolute;
-    top:0;
-    right:0;
-    left:0;
-    bottom:0;
-    width:950px;
-    height:321px;
-    margin:0 auto;
-    background: linear-gradient(90deg, rgba(32,32,32,1) 0%, rgba(255,255,255,0) 20%, rgba(255,255,255,0) 20%, rgba(32,32,32,1) 100%);
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 950px;
+    height: 321px;
+    margin: 0 auto;
+    background: linear-gradient(
+        90deg,
+        rgba(32, 32, 32, 1) 0%,
+        rgba(255, 255, 255, 0) 20%,
+        rgba(255, 255, 255, 0) 20%,
+        rgba(32, 32, 32, 1) 100%
+    );
 }
 
 .photo-grid__track {
     --gap: 120px;
     margin-left: -200px;
-    width:100%;
+    width: 100%;
     height: 200px;
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: flex-end;
     gap: var(--gap);
-    transition: .2s;
+    transition: 0.2s;
     justify-self: flex-end;
 }
 
@@ -150,7 +156,7 @@
     font-size: 40px;
     line-height: 49px;
     color: var(--white);
-    transform: matrix(1, -.05, .05, 1, 0, 0);
+    transform: matrix(1, -0.05, 0.05, 1, 0, 0);
 }
 
 .photo-grid__paragraph {

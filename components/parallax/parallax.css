@@ -6,9 +6,9 @@
 }
 
 .parallax::before {
-    content:'';
+    content: '';
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -16,7 +16,7 @@
     min-height: 1054px;
     z-index: -10;
     transform-origin: center;
-    background-image: url("./../../assets/images/mask_4.png");
+    background-image: url('./../../assets/images/mask_4.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

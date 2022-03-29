@@ -1,7 +1,10 @@
 .page {
+    /*max-width: 100vw;*/
+    /*min-width: 1295px;*/
     background: var(--background);
     font-family: 'OpenSans', Helvetica, sans-serif;
     color: var(--main-text-intro);
+    margin: 0;
 }
 
 .page__container {
@@ -13,10 +16,10 @@
     perspective: 1px;
     overflow-x: hidden;
     overflow-y: scroll;
+    padding: 0 0 77px;
 }
 
 .page__container_main {
-    padding: 26px 0 77px;
 }
 
 .page__header {
