@@ -1,7 +1,6 @@
 .parallax {
     /*width: 100vw;*/
     height: 397px;
-
     transform-style: inherit;
 }
 
@@ -13,13 +12,14 @@
     right: 0;
     bottom: 0;
     min-width: 1449px;
-    min-height: 1054px;
+    /*min-height: 1054px;*/
+    height: 50vh;
+    padding: -50vh;
     z-index: -10;
     transform-origin: center;
     background-image: url('./../../assets/images/mask_4.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-
     transform: translateZ(-1px) scale(3);
 }

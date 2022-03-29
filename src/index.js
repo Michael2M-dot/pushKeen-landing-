@@ -14,7 +14,6 @@ let currentIndex = 0;
 showSlides(currentIndex);
 
 function showSlides(n) {
-
     items.forEach((item) => {
         item.setAttribute('style', 'order: 1');
     });

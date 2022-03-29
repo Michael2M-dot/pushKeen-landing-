@@ -4,6 +4,7 @@
     padding-top: 82px;
     background: var(--background);
     overflow: hidden;
+    margin: 0 auto 77px;
 }
 
 .photo-grid__btm-list {
@@ -72,7 +73,7 @@
         90deg,
         rgba(32, 32, 32, 1) 0%,
         rgba(255, 255, 255, 0) 20%,
-        rgba(255, 255, 255, 0) 20%,
+        rgba(255, 255, 255, 0) 80%,
         rgba(32, 32, 32, 1) 100%
     );
 }
