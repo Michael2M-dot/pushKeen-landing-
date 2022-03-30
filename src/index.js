@@ -9,6 +9,7 @@ const prevBtn = section.querySelector('#btn-prev');
 const paragraph = section.querySelector('.photo-grid__paragraph');
 const authorPicture = section.querySelector('.photo-grid__author-pic');
 const nickName = section.querySelector('.photo-grid__nickname');
+const tgNickName = section.querySelector('.photo-grid__author-nickname');
 
 let currentIndex = 0;
 showSlides(currentIndex);
@@ -56,6 +57,7 @@ function showSlides(n) {
     paragraph.textContent = initialCards[index].text;
     nickName.textContent = `«${initialCards[index].nickname}»`;
     authorPicture.src = `./assets/images/${initialCards[index].photo}`;
+    tgNickName.textContent = initialCards[index].tg_nickname;
 }
 
 nextBtn.addEventListener('click', (e) => {
