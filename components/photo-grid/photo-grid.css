@@ -66,7 +66,7 @@
     right: 0;
     left: 0;
     bottom: 0;
-    width: 950px;
+    /*width: 950px;*/
     height: 321px;
     margin: 0 auto;
     background: linear-gradient(
@@ -79,8 +79,10 @@
 }
 
 .photo-grid__track {
+    list-style: none;
+    padding: 0;
     --gap: 120px;
-    margin-left: -200px;
+    margin-left: -160px;
     width: 100%;
     height: 200px;
     display: flex;
