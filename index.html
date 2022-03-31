@@ -150,8 +150,8 @@
                                 arial-lable="Выбрать редкие фотографии"
                                 title="переключить"
                                 type="button"
-                                class="button button_primary photo-grid__btn button__icon_active"
-                                id=""
+                                class="button photo-grid__btn button__icon_active"
+                                id="rare-btn"
                             >
                                 Редкие
                             </button>
@@ -161,7 +161,8 @@
                                 arial-lable="Выбрать очень редкие фотографии"
                                 title="переключить"
                                 type="button"
-                                class="button button_secondary photo-grid__btn"
+                                class="button photo-grid__btn"
+                                id="very-rare-btn"
                             >
                                 Очень редкие
                             </button>
@@ -170,46 +171,30 @@
 
                     <div class="photo-grid__container">
                         <ul class="photo-grid__track">
-                            <li class="photo-grid__item">
-                                <img
-                                    class="photo-grid__slider-pic"
-                                    src="assets/images/pic-1.png"
-                                    alt="очень красивое фото"
-                                />
-                                <p class="photo-grid__pic-author">
-                                    Елена денисова
-                                </p>
-                            </li>
-                            <li class="photo-grid__item">
-                                <img
-                                    class="photo-grid__slider-pic"
-                                    src="assets/images/pic-2.png"
-                                    alt="очень красивое фото"
-                                />
-                                <p class="photo-grid__pic-author">
-                                    света белая
-                                </p>
-                            </li>
-                            <li class="photo-grid__item">
-                                <img
-                                    class="photo-grid__slider-pic"
-                                    src="assets/images/pic-3.png"
-                                    alt="очень красивое фото"
-                                />
-                                <p class="photo-grid__pic-author">
-                                    надя авдеева
-                                </p>
-                            </li>
-                            <li class="photo-grid__item">
-                                <img
-                                    class="photo-grid__slider-pic"
-                                    src="assets/images/pic-4.png"
-                                    alt="очень красивое фото"
-                                />
-                                <p class="photo-grid__pic-author">
-                                    макс кулагин
-                                </p>
-                            </li>
+<!--                            <li class="photo-grid__item">-->
+<!--                                <img-->
+<!--                                    class="photo-grid__image"-->
+<!--                                    src=""-->
+<!--                                    alt="очень красивое фото"-->
+<!--                                />-->
+<!--                                <p class="photo-grid__author"></p>-->
+<!--                            </li>-->
+<!--                            <li class="photo-grid__item">-->
+<!--                                <img-->
+<!--                                    class="photo-grid__image"-->
+<!--                                    src=""-->
+<!--                                    alt="очень красивое фото"-->
+<!--                                />-->
+<!--                                <p class="photo-grid__author"></p>-->
+<!--                            </li>-->
+<!--                            <li class="photo-grid__item">-->
+<!--                                <img-->
+<!--                                    class="photo-grid__image"-->
+<!--                                    src=""-->
+<!--                                    alt="очень красивое фото"-->
+<!--                                />-->
+<!--                                <p class="photo-grid__author"></p>-->
+<!--                            </li>-->
                         </ul>
                     </div>
                     <div class="photo-grid__nav-bar">
@@ -224,10 +209,6 @@
                             </svg>
                         </button>
                         <h4 class="photo-grid__nickname"></h4>
-<!--                        <h4 class="photo-grid__nickname">&#171;bub1&#187;</h4>-->
-<!--                        <h4 class="photo-grid__nickname">&#171;bub2&#187;</h4>-->
-<!--                        <h4 class="photo-grid__nickname">&#171;bub3&#187;</h4>-->
-<!--                        <h4 class="photo-grid__nickname">&#171;bub4&#187;</h4>-->
                         <button
                             class="button button_primary photo-grid__nav-button"
                             id="btn-next"
@@ -239,19 +220,10 @@
                             </svg>
                         </button>
                     </div>
-                    <div class="photo-grid__author">
+                    <div class="photo-grid__text-container">
                         <div class="photo-grid__story">
                             <span class="photo-grid__quote">бб</span>
-                            <p class="photo-grid__paragraph">
-                                Фрилансер моушн дизайнер, иллюстратор и
-                                энтузиаст Бэн Марриот из Сиднея собирает
-                                классные свежие подборки анимационных работ. У
-                                него хороший вкус и выбранные ним работы точно
-                                вдохновят вас на что-то клёвое. От рекламных
-                                роликов до снимков продукта, маркетинговых
-                                кампаний и дизайна игр, используя возможности 3D
-                                открываются новые двери для отображения картин.
-                            </p>
+                            <p class="photo-grid__paragraph"></p>
                             <span
                                 class="photo-grid__quote photo-grid__quote_lower"
                                 >бб</span
@@ -298,6 +270,17 @@
                 </section>
             </main>
         </div>
+
+        <template class="element__template" id="card-template">
+            <li class="element photo-grid__item">
+                <img
+                  class="element__image photo-grid__image"
+                  src=""
+                  alt=""
+                />
+                <p class="element__author photo-grid__author"></p>
+            </li>
+        </template>
 
         <script type="text/javascript" src="src/initialCards.js"></script>
         <script type="text/javascript" src="src/index.js"></script>
