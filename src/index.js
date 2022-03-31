@@ -51,9 +51,20 @@ function showSlides(n) {
         prevIndex = index - 1;
     }
 
+    // меняем порядок отрисовки компонента с изображением на странице
     items[prevIndex].setAttribute('style', 'order: -2');
     items[index].setAttribute('style', 'order: -1');
     items[nextIndex].setAttribute('style', 'order: 0');
+
+    //работаем с селекторами для установки стилей на элементы изображения и подписи автора
+    items[prevIndex].querySelector('.photo-grid__image').classList.remove('photo-grid__image_active');
+    items[prevIndex].querySelector('.photo-grid__author').classList.remove('photo-grid__author_active');
+    items[nextIndex].querySelector('.photo-grid__author').classList.remove('photo-grid__author_active');
+    items[nextIndex].querySelector('.photo-grid__image').classList.remove('photo-grid__image_active');
+    items[index].querySelector('.photo-grid__author').classList.add('photo-grid__author_active');
+    items[index].querySelector('.photo-grid__image').classList.add('photo-grid__image_active');
+
+    //подгружаем в DOM значения из массива значений.
     paragraph.textContent = initialCards[index].text;
     nickName.textContent = `«${initialCards[index].nickname}»`;
     authorPicture.src = `./assets/images/${initialCards[index].photo}`;
