@@ -150,8 +150,8 @@
                                 arial-lable="Выбрать редкие фотографии"
                                 title="переключить"
                                 type="button"
-                                class="button button_primary photo-grid__btn button__icon_active"
-                                id=""
+                                class="button photo-grid__btn button__icon_active"
+                                id="rare-btn"
                             >
                                 Редкие
                             </button>
@@ -161,7 +161,8 @@
                                 arial-lable="Выбрать очень редкие фотографии"
                                 title="переключить"
                                 type="button"
-                                class="button button_secondary photo-grid__btn"
+                                class="button photo-grid__btn"
+                                id="very-rare-btn"
                             >
                                 Очень редкие
                             </button>
@@ -170,46 +171,30 @@
 
                     <div class="photo-grid__container">
                         <ul class="photo-grid__track">
-                            <li class="photo-grid__item">
-                                <img
-                                    class="photo-grid__image"
-                                    src="assets/images/pic-1.png"
-                                    alt="очень красивое фото"
-                                />
-                                <p class="photo-grid__author">
-                                    Елена денисова
-                                </p>
-                            </li>
-                            <li class="photo-grid__item">
-                                <img
-                                    class="photo-grid__image"
-                                    src="assets/images/pic-2.png"
-                                    alt="очень красивое фото"
-                                />
-                                <p class="photo-grid__author">
-                                    света белая
-                                </p>
-                            </li>
-                            <li class="photo-grid__item">
-                                <img
-                                    class="photo-grid__image"
-                                    src="assets/images/pic-3.png"
-                                    alt="очень красивое фото"
-                                />
-                                <p class="photo-grid__author">
-                                    надя авдеева
-                                </p>
-                            </li>
-                            <li class="photo-grid__item">
-                                <img
-                                    class="photo-grid__image"
-                                    src="assets/images/pic-4.png"
-                                    alt="очень красивое фото"
-                                />
-                                <p class="photo-grid__author">
-                                    макс кулагин
-                                </p>
-                            </li>
+<!--                            <li class="photo-grid__item">-->
+<!--                                <img-->
+<!--                                    class="photo-grid__image"-->
+<!--                                    src=""-->
+<!--                                    alt="очень красивое фото"-->
+<!--                                />-->
+<!--                                <p class="photo-grid__author"></p>-->
+<!--                            </li>-->
+<!--                            <li class="photo-grid__item">-->
+<!--                                <img-->
+<!--                                    class="photo-grid__image"-->
+<!--                                    src=""-->
+<!--                                    alt="очень красивое фото"-->
+<!--                                />-->
+<!--                                <p class="photo-grid__author"></p>-->
+<!--                            </li>-->
+<!--                            <li class="photo-grid__item">-->
+<!--                                <img-->
+<!--                                    class="photo-grid__image"-->
+<!--                                    src=""-->
+<!--                                    alt="очень красивое фото"-->
+<!--                                />-->
+<!--                                <p class="photo-grid__author"></p>-->
+<!--                            </li>-->
                         </ul>
                     </div>
                     <div class="photo-grid__nav-bar">
@@ -285,6 +270,17 @@
                 </section>
             </main>
         </div>
+
+        <template class="element__template" id="card-template">
+            <li class="element photo-grid__item">
+                <img
+                  class="element__image photo-grid__image"
+                  src=""
+                  alt=""
+                />
+                <p class="element__author photo-grid__author"></p>
+            </li>
+        </template>
 
         <script type="text/javascript" src="src/initialCards.js"></script>
         <script type="text/javascript" src="src/index.js"></script>
