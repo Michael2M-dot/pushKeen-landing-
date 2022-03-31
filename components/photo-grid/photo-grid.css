@@ -47,6 +47,8 @@
 
 .photo-grid__nav-button {
     padding: 13px 16px;
+    border: 1px solid var(--blue);
+    color: var(--blue);
 }
 
 .photo-grid__container {
