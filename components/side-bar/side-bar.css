@@ -55,6 +55,7 @@
     font-size: 22px;
     line-height: 48px;
     text-transform: uppercase;
+    text-decoration: none;
     color: var(--grey-2);
     transition: opacity 0.3s ease-in 0.3s;
     cursor: pointer;
