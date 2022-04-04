@@ -31,21 +31,21 @@
             </header>
             <main class="content page__content">
                 <!--   Секция LEAD     -->
-                <section class="lead content__section section">
+                <section class="lead content__section section" id="lead">
                     <div class="lead__image-bg"></div>
                     <h1 class="lead__title">Bubble Drop</h1>
                     <p class="lead__text">
                         Рассмотрим основные развивающиеся тренды 2022 года в
                         моушн дизайне.
                     </p>
-                    <div class="lead__lable">
-                        <svg class="lead__lable-logo">
+                    <div class="lead__label">
+                        <svg class="lead__label-logo">
                             <use
                                 xlink:href="./assets/images/icons_sprite.svg#icon__binance"
                             />
                         </svg>
-                        <div class="lead__lable-container">
-                            <p class="lead__lable-text">420 tokens</p>
+                        <div class="lead__label-container">
+                            <p class="lead__label-text">420 tokens</p>
                         </div>
                     </div>
                     <!--      side-bar левый и правый секции LEAD    -->
@@ -55,7 +55,9 @@
                         </h3>
                         <ul class="side-bar__list">
                             <li class="side-bar__item">
-                                <a class="side-bar__link side-bar__link_active"
+                                <a
+                                    class="side-bar__link side-bar__link_active"
+                                    href="#lead"
                                     >01</a
                                 >
                             </li>
@@ -63,10 +65,12 @@
                                 class="side-bar__item side-bar__link-divider"
                             ></li>
                             <li class="side-bar__item">
-                                <a class="side-bar__link">02</a>
+                                <a class="side-bar__link" href="#about">02</a>
                             </li>
                             <li class="side-bar__item">
-                                <a class="side-bar__link">03</a>
+                                <a class="side-bar__link" href="#photo-grid"
+                                    >03</a
+                                >
                             </li>
                             <li class="side-bar__item">
                                 <a class="side-bar__link">04</a>
@@ -84,7 +88,7 @@
                 </section>
 
                 <!-- Секция О ПРОЕКТЕ  -->
-                <section class="about content__section section">
+                <section class="about content__section section" id="about">
                     <div class="bubble about__bubble"></div>
                     <div class="about__text-container">
                         <h3 class="about__title">О проекте</h3>
@@ -114,10 +118,12 @@
                     <div class="side-bar about__side-bar_left">
                         <ul class="side-bar__list">
                             <li class="side-bar__item">
-                                <a class="side-bar__link">01</a>
+                                <a class="side-bar__link" href="#lead">01</a>
                             </li>
                             <li class="side-bar__item">
-                                <a class="side-bar__link side-bar__link_active"
+                                <a
+                                    class="side-bar__link side-bar__link_active"
+                                    href="#about"
                                     >02</a
                                 >
                             </li>
@@ -125,7 +131,9 @@
                                 class="side-bar__item side-bar__link-divider"
                             ></li>
                             <li class="side-bar__item">
-                                <a class="side-bar__link">03</a>
+                                <a class="side-bar__link" href="#photo-grid"
+                                    >03</a
+                                >
                             </li>
                             <li class="side-bar__item">
                                 <a class="side-bar__link">04</a>
@@ -169,33 +177,8 @@
                         </li>
                     </ul>
 
-                    <div class="photo-grid__container">
-                        <ul class="photo-grid__track">
-<!--                            <li class="photo-grid__item">-->
-<!--                                <img-->
-<!--                                    class="photo-grid__image"-->
-<!--                                    src=""-->
-<!--                                    alt="очень красивое фото"-->
-<!--                                />-->
-<!--                                <p class="photo-grid__author"></p>-->
-<!--                            </li>-->
-<!--                            <li class="photo-grid__item">-->
-<!--                                <img-->
-<!--                                    class="photo-grid__image"-->
-<!--                                    src=""-->
-<!--                                    alt="очень красивое фото"-->
-<!--                                />-->
-<!--                                <p class="photo-grid__author"></p>-->
-<!--                            </li>-->
-<!--                            <li class="photo-grid__item">-->
-<!--                                <img-->
-<!--                                    class="photo-grid__image"-->
-<!--                                    src=""-->
-<!--                                    alt="очень красивое фото"-->
-<!--                                />-->
-<!--                                <p class="photo-grid__author"></p>-->
-<!--                            </li>-->
-                        </ul>
+                    <div class="elements">
+                        <ul class="elements__list"></ul>
                     </div>
                     <div class="photo-grid__nav-bar">
                         <button
@@ -243,16 +226,21 @@
                     </div>
 
                     <!-- side-bar блока photo-grid -->
-                    <div class="side-bar photo-grid__side-bar_left">
+                    <div
+                        class="side-bar photo-grid__side-bar_left"
+                        id="photo-grid"
+                    >
                         <ul class="side-bar__list">
                             <li class="side-bar__item">
-                                <a class="side-bar__link">01</a>
+                                <a class="side-bar__link" href="#lead">01</a>
                             </li>
                             <li class="side-bar__item">
-                                <a class="side-bar__link">02</a>
+                                <a class="side-bar__link" href="#about">02</a>
                             </li>
                             <li class="side-bar__item">
-                                <a class="side-bar__link side-bar__link_active"
+                                <a
+                                    class="side-bar__link side-bar__link_active"
+                                    href="#photo-grid"
                                     >03</a
                                 >
                             </li>
@@ -272,13 +260,9 @@
         </div>
 
         <template class="element__template" id="card-template">
-            <li class="element photo-grid__item">
-                <img
-                  class="element__image photo-grid__image"
-                  src=""
-                  alt=""
-                />
-                <p class="element__author photo-grid__author"></p>
+            <li class="element elements__list-item">
+                <img class="element__image" src="" alt="" />
+                <p class="element__author"></p>
             </li>
         </template>
 

@@ -1,9 +1,6 @@
 const section = document.querySelector('.photo-grid');
-const container = section.querySelector('.photo-grid__container');
-// const items = container.querySelectorAll('.photo-grid__item');
-const card = container.querySelector('.photo-grid__item');
-// const itemImage = item.querySelector('.photo-grid__slider-pic');
-// const itemAuthor = item.querySelector('.photo-grid__pic-author');
+const container = section.querySelector('.elements');
+// const card = container.querySelector('.photo-grid__item');
 const nextBtn = section.querySelector('#btn-next');
 const prevBtn = section.querySelector('#btn-prev');
 const paragraph = section.querySelector('.photo-grid__paragraph');
@@ -13,13 +10,13 @@ const tgNickName = section.querySelector('.photo-grid__author-nickname');
 const rareBtn = section.querySelector('#rare-btn');
 const veryRareBtn = section.querySelector('#very-rare-btn');
 
-const cardList = container.querySelector('.photo-grid__track');
+const cardList = container.querySelector('.elements__list');
 const cardTemplate = document.querySelector('.element__template').content; //достаем шаблон из template
 
 let currentIndex = 0;
 let isRare = true;
 
-const createCard = (item, type)  => {
+const createCard = (item, type) => {
     const cardElement = cardTemplate.querySelector('.element').cloneNode(true);
     const cardImage = cardElement.querySelector('.element__image');
     const cardAuthor = cardElement.querySelector('.element__author');
@@ -44,17 +41,17 @@ const cardRendering = (items, type) => {
 
 const removeElements = (list) => {
     console.log('deleted');
-    while(list.lastElementChild) {
+    while (list.lastElementChild) {
         list.removeChild(list.lastElementChild);
     }
-}
+};
 
 cardRendering(initialCards, isRare);
 
 showSlides(currentIndex);
 
 function showSlides(n) {
-    const items = container.querySelectorAll('.photo-grid__item');
+    const items = container.querySelectorAll('.element');
 
     items.forEach((item) => {
         item.setAttribute('style', 'order: 1');
@@ -97,12 +94,24 @@ function showSlides(n) {
     items[nextIndex].setAttribute('style', 'order: 0');
 
     //работаем с селекторами для установки стилей на элементы изображения и подписи автора
-    items[prevIndex].querySelector('.photo-grid__image').classList.remove('photo-grid__image_active');
-    items[prevIndex].querySelector('.photo-grid__author').classList.remove('photo-grid__author_active');
-    items[nextIndex].querySelector('.photo-grid__author').classList.remove('photo-grid__author_active');
-    items[nextIndex].querySelector('.photo-grid__image').classList.remove('photo-grid__image_active');
-    items[index].querySelector('.photo-grid__author').classList.add('photo-grid__author_active');
-    items[index].querySelector('.photo-grid__image').classList.add('photo-grid__image_active');
+    items[prevIndex]
+        .querySelector('.element__image')
+        .classList.remove('element__image_active');
+    items[prevIndex]
+        .querySelector('.element__author')
+        .classList.remove('element__author_active');
+    items[nextIndex]
+        .querySelector('.element__author')
+        .classList.remove('element__author_active');
+    items[nextIndex]
+        .querySelector('.element__image')
+        .classList.remove('element__image_active');
+    items[index]
+        .querySelector('.element__author')
+        .classList.add('element__author_active');
+    items[index]
+        .querySelector('.element__image')
+        .classList.add('element__image_active');
 
     //подгружаем в DOM значения из массива значений.
     paragraph.textContent = initialCards[index].text;
@@ -115,13 +124,13 @@ function showSlides(n) {
 nextBtn.addEventListener('click', (e) => {
     prevBtn.classList.remove('button__icon_active');
     nextBtn.classList.add('button__icon_active');
-    showSlides(currentIndex +=1);
+    showSlides((currentIndex += 1));
 });
 
 prevBtn.addEventListener('click', (e) => {
     prevBtn.classList.add('button__icon_active');
     nextBtn.classList.remove('button__icon_active');
-    showSlides(currentIndex -=1);
+    showSlides((currentIndex -= 1));
 });
 
 rareBtn.addEventListener('click', () => {
@@ -132,7 +141,7 @@ rareBtn.addEventListener('click', () => {
     isRare = true;
     cardRendering(initialCards, isRare);
     showSlides(currentIndex);
-})
+});
 
 veryRareBtn.addEventListener('click', () => {
     rareBtn.classList.remove('button__icon_active');
